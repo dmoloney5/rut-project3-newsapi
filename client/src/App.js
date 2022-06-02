@@ -1,9 +1,12 @@
 import React from 'react';
+import Donation from './components/Donation'
 
 
 function App() {
     return (
-        <h1>Null and Void News!!</h1>
+        
+        <Donation> </Donation>
+        
     );
 }
 
