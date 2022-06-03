@@ -1,0 +1,6 @@
+export { default as NewsItem } from './NewsItem'
+export { default as NewsList } from './NewsList'
+export { default as BusinessList } from './Business'
+export { default as SportsList } from './Sports'
+export { default as TechList } from './Technology'
+export { default as HealthList } from './Health'
