@@ -4,8 +4,8 @@ function Nav({ currentPage, handlePageChange }) {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
-        <a class="navbar-brand" href="#about-me"
-          onClick={() => handlePageChange('About')}>Null and Void News</a>
+        <a class="navbar-brand" href="#NewsList"
+          onClick={() => handlePageChange('News')}>Null and Void News</a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -43,20 +43,9 @@ function Nav({ currentPage, handlePageChange }) {
                 Health
               </a>
             </li>
-            <li className="nav-item">
+          <li className="nav-item">
               <a
-                href="#Health"
-                onClick={() => handlePageChange('Health')}
-                //  TODO: Add a comment explaining what this logic is doing
-
-                className={currentPage === 'Health' ? 'nav-link active' : 'nav-link'}
-              >
-                Health
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                href="#Sports"
+                href="sports"
                 onClick={() => handlePageChange('Sports')}
                 //  TODO: Add a comment explaining what this logic is doing
 

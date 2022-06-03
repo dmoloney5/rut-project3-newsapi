@@ -8,7 +8,7 @@ const TechList = () => {
 
     useEffect(() => {
         const getArticles = async () => {
-            const response = await axios.get(`https://newsapi.org/v2/top-headlines?country=us&apiKey=61b7a8f9debe482ca9463aa72a5ca4a3`)
+            const response = await axios.get(`https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=61b7a8f9debe482ca9463aa72a5ca4a3`)
             setArticles(response.data.articles)
             console.log(response)
         }
