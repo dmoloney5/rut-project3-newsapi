@@ -5,11 +5,12 @@ import Business from './Business';
 import Health from './Health';
 import Sports from './Sports';
 import Technology from './Technology';
+import Entertainment from './Entertainment';
 import Contact from './Contact'
+
 
 export default function Portfolio() {
     const [currentPage, setCurrentPage] = useState('NewsList');
-
     const renderPage = () => {
         if (currentPage === 'NewsList') {
             return <NewsList />;
@@ -25,6 +26,9 @@ export default function Portfolio() {
         }
         if (currentPage === 'Technology') {
             return <Technology />;
+        }
+        if (currentPage === 'Entertainment') {
+            return <Entertainment />;
         }
 
         return <Contact />;

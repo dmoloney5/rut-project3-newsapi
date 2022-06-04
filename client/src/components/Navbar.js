@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 function Nav({ currentPage, handlePageChange }) {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -43,9 +44,20 @@ function Nav({ currentPage, handlePageChange }) {
                 Health
               </a>
             </li>
+            <li className="nav-item">
+              <a
+                href="#Entertainment"
+                onClick={() => handlePageChange('Entertainment')}
+                //  TODO: Add a comment explaining what this logic is doing
+
+                className={currentPage === 'Entertainment' ? 'nav-link active' : 'nav-link'}
+              >
+                Entertainment
+              </a>
+            </li>
           <li className="nav-item">
               <a
-                href="sports"
+                href="#sports"
                 onClick={() => handlePageChange('Sports')}
                 //  TODO: Add a comment explaining what this logic is doing
 

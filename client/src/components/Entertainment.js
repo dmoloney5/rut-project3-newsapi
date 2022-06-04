@@ -3,12 +3,12 @@ import axios from 'axios'
 import { NewsItem } from '.'
 require('dotenv').config({ path: '../../.env' })
 
-const SportsList = () => {
+const EnterList = () => {
     const [articles, setArticles] = useState([])
 
     useEffect(() => {
         const getArticles = async () => {
-            const response = await axios.get(`https://newsapi.org/v2/top-headlines?country=us&category=sports&apiKey=61b7a8f9debe482ca9463aa72a5ca4a3`)
+            const response = await axios.get(`https://newsapi.org/v2/top-headlines?country=us&category=entertainment&apiKey=61b7a8f9debe482ca9463aa72a5ca4a3`)
             setArticles(response.data.articles)
             console.log(response)
         }
@@ -16,7 +16,7 @@ const SportsList = () => {
         getArticles()
     }, [])
     return (
-        <div className='Sports'>
+        <div className='Entertainment'>
             {articles.map(article => {
                 return (
                     <NewsItem
@@ -31,4 +31,4 @@ const SportsList = () => {
     )
 }
 
-export default SportsList
+export default EnterList
