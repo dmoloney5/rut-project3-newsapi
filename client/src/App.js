@@ -1,13 +1,25 @@
-import React from 'react';
-import Donation from './components/Donation'
+import React, {useState} from 'react';
+import './App.css'
+import StripeCheckout from 'react-stripe-checkout'
+
 
 
 function App() {
-    return (
+
+    const[item,setItem] = useState({
         
-        <Donation> </Donation>
-        
-    );
+    })
+    return(
+        <header>
+        <div>
+            <p>
+                filler for now
+            </p>
+            
+        </div>
+        <StripeCheckout/>
+        </header>
+    )
 }
 
 export default App;
