@@ -2,9 +2,6 @@ const express = require('express');
 const path = require('path');
 const db = require('./config/connection');
 const routes = require('./routes');
-const Payment = require('./routes/payment')
-
-
 
 
 const app = express();
@@ -20,7 +17,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 app.use(routes);
-app.use(Payment)
+
 
 
 
