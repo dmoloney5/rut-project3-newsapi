@@ -2,7 +2,7 @@ import React from 'react';
 import SearchBar from './Search';
 
 
-function Nav({ currentPage, handlePageChange }) {
+function Nav({ currentPage, handlePageChange, setSearchResults }) {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
@@ -11,6 +11,10 @@ function Nav({ currentPage, handlePageChange }) {
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
+        <SearchBar
+          handlePageChange={handlePageChange}
+          setSearchResults={setSearchResults}
+        />
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
@@ -49,7 +53,7 @@ function Nav({ currentPage, handlePageChange }) {
                 Entertainment
               </a>
             </li>
-          <li className="nav-item">
+            <li className="nav-item">
               <a
                 href="#sports"
                 onClick={() => handlePageChange('Sports')}
