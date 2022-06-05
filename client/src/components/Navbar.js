@@ -78,8 +78,6 @@ function Nav({ currentPage, handlePageChange }) {
             <li className="nav-item">
               <a
                 href="#donate"
-                //  TODO: Add a comment explaining what this logic is doing
-
                 onClick={() => handlePageChange('Donation')}
                 className={currentPage === 'Donation' ? 'nav-link active' : 'nav-link'}
               >
