@@ -1,6 +1,6 @@
 import React, { useLayoutEffect, useState } from 'react'
 
-function SearchBar() => {
+function SearchBar() {
   //jsx
   const [barState, setBarState] = useState({ searchTarget: '' });
   const [errMsg, setErrMsg] = useState('');
@@ -10,11 +10,11 @@ function SearchBar() => {
       console.log(isValid);
       // isValid conditional statement
       if (!isValid) {
-        setErrorMessage('Your search is invalid.');
+        setErrMsg('Your search is invalid.');
       } else {
-        setErrorMessage('');
+        setErrMsg('');
       }
-      console.log('errorMessage:', errorMessage);
+      console.log('errorMessage:', errMsg);
     }
     if (!errorMessage) {
       setBarState({ ...barState, [e.target.searchTarget]: e.target.value });
@@ -25,10 +25,10 @@ function SearchBar() => {
     console.log(barState);
   }
   return (
-    <form onSubmit={this.handleSubmit}>
+    <form onSubmit={handleSubmit}>
       <label>
         Search:
-        <input type="text" value={this.state.value} onChange={this.handleChange} />
+        <input type="text" value={this.state.value} onChange={handleChange} />
       </label>
       <input type="submit" value="Submit" />
     </form>
