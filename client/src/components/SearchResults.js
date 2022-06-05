@@ -2,6 +2,7 @@ import React from 'react'
 import NewsItem from './NewsItem'
 
 function SearchResults({searchResults}) {
+  console.log("blah" + searchResults);
   return (
     <div className="SearchResults">
       {searchResults?.map((article) => {
