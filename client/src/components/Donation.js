@@ -4,8 +4,6 @@ import React, { useState } from "react";
 import StripeCheckout from "react-stripe-checkout";
 // import Button from "react-bootstrap/Button";
 
-
-
 function Donation() {
   const [item] = useState({
     name: "Donation",
@@ -33,18 +31,38 @@ function Donation() {
       .catch((error) => console.log(error));
   };
   return (
-      <div>
-          donationForm
+    <div>
+      
+      <form>
+        
+        <label>
+          First Name:
+          <input type="text" name="name" />
+        </label>
+        <label>
+          Last Name:
+          <input type="text" name="name" />
+        </label>
+        <label>
+          Address:
+          <input type="text" name="name" />
+        </label>
+        <label>
+          Email:
+          <input type="text" name="name" />
+        </label>
+        <input type="submit" value="Submit" />
+      </form>
 
-        <StripeCheckout
-          stripeKey={process.env.REACT_APP_KEY}
-          token={payment}
-          name="Donation"
-          amount={item.price * 100}
-        >
-          <button>Donate ${item.price}</button>
-        </StripeCheckout>
-        </div>
+      <StripeCheckout
+        stripeKey={process.env.REACT_APP_KEY}
+        token={payment}
+        name="Donation"
+        amount={item.price * 100}
+      >
+        <button>Donate ${item.price}</button>
+      </StripeCheckout>
+    </div>
   );
 }
 
