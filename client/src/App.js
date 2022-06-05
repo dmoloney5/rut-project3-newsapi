@@ -5,4 +5,5 @@ import News from "./components/News";
 const App = () => <News />;
 
 
+
 export default App;

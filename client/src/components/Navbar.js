@@ -5,7 +5,7 @@ function Nav({ currentPage, handlePageChange }) {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
-        <a class="navbar-brand" href="#NewsList"
+        <a className="navbar-brand" href="#NewsList"
           onClick={() => handlePageChange('News')}>Null and Void News</a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
@@ -86,6 +86,17 @@ function Nav({ currentPage, handlePageChange }) {
                 className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
               >
                 Contact
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                href="#donate"
+                //  TODO: Add a comment explaining what this logic is doing
+
+                onClick={() => handlePageChange('Donation')}
+                className={currentPage === 'Donation' ? 'nav-link active' : 'nav-link'}
+              >
+                Donation
               </a>
             </li>
           </ul>

@@ -7,9 +7,10 @@ import Sports from './Sports';
 import Technology from './Technology';
 import Entertainment from './Entertainment';
 import Contact from './Contact'
+import Donation from './Donation';
 
 
-export default function Portfolio() {
+export default function News() {
     const [currentPage, setCurrentPage] = useState('NewsList');
     const renderPage = () => {
         if (currentPage === 'NewsList') {
@@ -29,6 +30,9 @@ export default function Portfolio() {
         }
         if (currentPage === 'Entertainment') {
             return <Entertainment />;
+        }
+        if (currentPage === 'Donation') {
+            return <Donation />;
         }
 
         return <Contact />;
