@@ -40,7 +40,6 @@ export default function News() {
             return <Donation />;
         }
         if (currentPage === 'Search') {
-            console.log("Search page", searchResults);
             //create search results component that passes searchResults data in as prop
             return <SearchResults 
             searchResults={searchResults}></SearchResults>
