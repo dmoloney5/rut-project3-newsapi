@@ -16,7 +16,6 @@ function Nav({ currentPage, handlePageChange }) {
               <a
                 href="#NewsList"
                 onClick={() => handlePageChange('NewsList')}
-
                 className={currentPage === 'NewsList' ? 'nav-link active' : 'nav-link'}
               >
                 Top Stories
@@ -26,8 +25,6 @@ function Nav({ currentPage, handlePageChange }) {
               <a
                 href="#Business"
                 onClick={() => handlePageChange('Business')}
-                //  TODO: Add a comment explaining what this logic is doing
-
                 className={currentPage === 'Business' ? 'nav-link active' : 'nav-link'}
               >
                 Business
@@ -37,8 +34,6 @@ function Nav({ currentPage, handlePageChange }) {
               <a
                 href="#Health"
                 onClick={() => handlePageChange('Health')}
-                //  TODO: Add a comment explaining what this logic is doing
-
                 className={currentPage === 'Health' ? 'nav-link active' : 'nav-link'}
               >
                 Health
@@ -48,8 +43,6 @@ function Nav({ currentPage, handlePageChange }) {
               <a
                 href="#Entertainment"
                 onClick={() => handlePageChange('Entertainment')}
-                //  TODO: Add a comment explaining what this logic is doing
-
                 className={currentPage === 'Entertainment' ? 'nav-link active' : 'nav-link'}
               >
                 Entertainment
@@ -59,8 +52,6 @@ function Nav({ currentPage, handlePageChange }) {
               <a
                 href="#sports"
                 onClick={() => handlePageChange('Sports')}
-                //  TODO: Add a comment explaining what this logic is doing
-
                 className={currentPage === 'Sports' ? 'nav-link active' : 'nav-link'}
               >
                 Sports
@@ -70,8 +61,6 @@ function Nav({ currentPage, handlePageChange }) {
               <a
                 href="#Technology"
                 onClick={() => handlePageChange('Technology')}
-                //  TODO: Add a comment explaining what this logic is doing
-
                 className={currentPage === 'Technology' ? 'nav-link active' : 'nav-link'}
               >
                 Technology
@@ -80,8 +69,6 @@ function Nav({ currentPage, handlePageChange }) {
             <li className="nav-item">
               <a
                 href="#contact"
-                //  TODO: Add a comment explaining what this logic is doing
-
                 onClick={() => handlePageChange('Contact')}
                 className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
               >
