@@ -6,7 +6,7 @@ import StripeCheckout from "react-stripe-checkout";
 
 function Donation() {
   const [item] = useState({
-    name: "Donation",
+    name: "Donate 10",
     price: "10",
   });
 
@@ -30,11 +30,10 @@ function Donation() {
       })
       .catch((error) => console.log(error));
   };
+
   return (
     <div>
-      
       <form>
-        
         <label>
           First Name:
           <input type="text" name="name" />
@@ -45,22 +44,25 @@ function Donation() {
         </label>
         <label>
           Address:
-          <input type="text" name="name" />
+          <input type="text" name="address" />
         </label>
         <label>
           Email:
-          <input type="text" name="name" />
+          <input type="text" name="email" />
         </label>
-        <input type="submit" value="Submit" />
+        <label>
+          Donatation:
+          <input type="text" name="donate" value="amount" />
+        </label>
       </form>
 
       <StripeCheckout
         stripeKey={process.env.REACT_APP_KEY}
         token={payment}
         name="Donation"
-        amount={item.price * 100}
+        amount={"amount" * 100}
       >
-        <button>Donate ${item.price}</button>
+        <button>Donate </button>
       </StripeCheckout>
     </div>
   );

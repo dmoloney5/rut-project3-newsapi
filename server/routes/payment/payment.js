@@ -23,6 +23,8 @@ app.post("./payment", (req, res) => {
     .create({
       email: token.email,
       source: token.id,
+      shippingAdresss:"",
+      billingAdress:""
     })
     .then((customer) => {
       stripe.charges.create({
