@@ -1,6 +1,7 @@
 import React from 'react';
 import SearchBar from './Search';
-
+import Signup from './Signup';
+import Login from './login';
 
 function Nav({ currentPage, handlePageChange, setSearchResults }) {
   return (
@@ -89,6 +90,26 @@ function Nav({ currentPage, handlePageChange, setSearchResults }) {
                 Donation
               </a>
             </li>
+            {/* <li className="nav-item">
+              <a
+                href="#Signup"
+                onClick={() => handlePageChange('Signup')}
+                className={currentPage === 'Signup' ? 'nav-link active' : 'nav-link'}
+              >
+                Signup
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                href="#Login"
+                onClick={() => handlePageChange('Login')}
+                className={currentPage === Login ? 'nav-link active' : 'nav-link'}
+              >
+                Login
+              </a>
+            </li> */}
+            <Login />
+            <Signup />
           </ul>
         </div>
       </div>
