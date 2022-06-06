@@ -1,9 +1,9 @@
-import React from 'react'
 import './App.css';
+import React from "react";
 import News from "./components/News";
 
-const App = () => <News />;
-
-
+function App() {
+  return <News />;
+}
 
 export default App;
