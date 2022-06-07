@@ -10,7 +10,7 @@
     margin-bottom: 30px;
 }
 
-.navbar {
+/* .navbar {
     text-align: center;
     padding: 80px;
 }
@@ -127,10 +127,10 @@ header a {
 }
 
 /* Start of the Header section */
-header {
+/* header {
     position: sticky; 
     top: 0;
-    padding: 20px 35px;
+    
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: lightblue;
     display: flex;
@@ -166,7 +166,7 @@ header nav ul li a {
     margin-left: 45px;
 }
 
-header nav ul li a:hover {
+header navbar ul li a:hover {
     background: orange;
     color: red;
     border-radius: 15px;
@@ -175,4 +175,4 @@ header nav ul li a:hover {
 
 header ul li {
     display: inline;
-}
+} */ 
