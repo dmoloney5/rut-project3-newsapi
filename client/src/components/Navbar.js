@@ -7,7 +7,7 @@ function Nav({ currentPage, handlePageChange, setSearchResults }) {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
-        <a class="navbar-brand" href="#about-me"
+        <a class="navbar-brand" href="#/"
           onClick={() => handlePageChange('About')}>Null and Void News</a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
@@ -31,7 +31,7 @@ function Nav({ currentPage, handlePageChange, setSearchResults }) {
             <li className="nav-item">
               <a
                 href="#Business"
-                onClick={() => handlePageChange('Projects')}
+                onClick={() => handlePageChange('Business')}
                 //  TODO: Add a comment explaining what this logic is doing
 
                 className={currentPage === 'Business' ? 'nav-link active' : 'nav-link'}
