@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import StripeCheckout from "react-stripe-checkout";
 // import Button from "react-bootstrap/Button";
 import DonationOptions from "./DonationOption";
+import DonationPage from "./DonationPage/index";
 
 function Donation() {
   const [item] = useState({
@@ -34,7 +35,9 @@ function Donation() {
 
   return (
     <div>
-      <form>
+       
+      
+      {/* <form>
         <label>
           First Name:
           <input type="text" name="name" />
@@ -54,9 +57,9 @@ function Donation() {
 
         
        
-      </form>
+      </form> */}
 
-      
+      <DonationPage/>
     <DonationOptions/>
       <StripeCheckout
         stripeKey={process.env.REACT_APP_KEY}
