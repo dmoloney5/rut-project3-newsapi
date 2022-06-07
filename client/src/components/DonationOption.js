@@ -80,15 +80,4 @@ class DonationOptions extends React.Component {
 
 export default DonationOptions;
 
-//   ReactDOM.render(
-//     <FlavorForm />,
-//     document.getElementById('root')
-//   );
 
-{
-  /* <section>
-<form class="row g-3"> */
-}
-
-// </form>
-// </section>

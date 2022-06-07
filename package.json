@@ -17,6 +17,7 @@
     "concurrently": "^5.1.0"
   },
   "dependencies": {
+    "bootstrap-css": "^4.0.0-alpha.5",
     "tailwindcss": "^3.0.24"
   }
 }
