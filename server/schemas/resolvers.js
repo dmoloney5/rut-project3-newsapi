@@ -3,11 +3,17 @@ const { User } = require('../models');
 const { signToken } = require('../utils/auth');
 
 const resolvers = {
+    Query: {
+        user: () => {
+            return {}
+        }
+    },
+
     Mutation: {
-        addUser: {
             addUser: async (parent, args) => {
                 const user = await User.create(args);
                 const token = signToken(user);
+                console.log(user);
 
                 return { token, user };
             },
@@ -27,7 +33,6 @@ const resolvers = {
                 return { token, user };
 
             }
-        }
     }
 };
 
