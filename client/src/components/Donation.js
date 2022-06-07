@@ -3,10 +3,13 @@ import React, { useState } from "react";
 // import "./App.css";
 import StripeCheckout from "react-stripe-checkout";
 // import Button from "react-bootstrap/Button";
+import DonationOptions from "./DonationOption";
+import DonationPage from "./DonationPage/index";
+import "react-bootstrap";
 
 function Donation() {
   const [item] = useState({
-    name: "Donation",
+    name: "Donate 10",
     price: "10",
   });
 
@@ -30,37 +33,19 @@ function Donation() {
       })
       .catch((error) => console.log(error));
   };
+
   return (
     <div>
-      
-      <form>
-        
-        <label>
-          First Name:
-          <input type="text" name="name" />
-        </label>
-        <label>
-          Last Name:
-          <input type="text" name="name" />
-        </label>
-        <label>
-          Address:
-          <input type="text" name="name" />
-        </label>
-        <label>
-          Email:
-          <input type="text" name="name" />
-        </label>
-        <input type="submit" value="Submit" />
-      </form>
+      <DonationPage />
 
+      <DonationOptions />
       <StripeCheckout
         stripeKey={process.env.REACT_APP_KEY}
         token={payment}
-        name="Donation"
-        amount={item.price * 100}
+        name="Pay with Card"
+        amount={"amount" * 100}
       >
-        <button>Donate ${item.price}</button>
+        <button>Donate </button>
       </StripeCheckout>
     </div>
   );
