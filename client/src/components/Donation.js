@@ -37,7 +37,6 @@ function Donation() {
   return (
     <div>
       <DonationPage />
-
       <DonationOptions />
       <StripeCheckout
         stripeKey={process.env.REACT_APP_KEY}
