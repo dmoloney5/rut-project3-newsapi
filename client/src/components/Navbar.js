@@ -1,15 +1,9 @@
 import React from 'react';
 import SearchBar from './Search';
 import Signup from './Signup';
-<<<<<<< HEAD
-import Login from './Login';
-
-function Nav({ currentPage, handlePageChange }) {
-=======
 import Login from './login';
 
 function Nav({ currentPage, handlePageChange, setSearchResults }) {
->>>>>>> 16c480b22ebf1db14c878bc34d45ff004b366537
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
@@ -89,8 +83,6 @@ function Nav({ currentPage, handlePageChange, setSearchResults }) {
                 Donation
               </a>
             </li>
-<<<<<<< HEAD
-=======
             {/* <li className="nav-item">
               <a
                 href="#Signup"
@@ -109,7 +101,6 @@ function Nav({ currentPage, handlePageChange, setSearchResults }) {
                 Login
               </a>
             </li> */}
->>>>>>> 16c480b22ebf1db14c878bc34d45ff004b366537
             <Login />
             <Signup />
           </ul>

@@ -5,20 +5,12 @@ import Auth from '../utils/auth';
 
 
 const LoginForm = (props) => {
-<<<<<<< HEAD
     const [formState, setFormState] = useState({ email: '', password: '' });
-=======
-    const [formState, setFormState] = useState({ email: '', password: ''});
->>>>>>> 16c480b22ebf1db14c878bc34d45ff004b366537
     const [login, { error }] = useMutation(USER_LOGIN);
 
     const handleChange = (event) => {
         const { name, value } = event.target;
-<<<<<<< HEAD
         setFormState({ ...formState, [name]: value });
-=======
-        setFormState({...formState, [name]: value });
->>>>>>> 16c480b22ebf1db14c878bc34d45ff004b366537
     };
 
     const handleFormSubmit = async (event) => {
@@ -45,7 +37,6 @@ const LoginForm = (props) => {
             <form onSubmit={handleFormSubmit}>
                 <div>
                     <label>Email</label>
-<<<<<<< HEAD
                     <input type="email"
                         placeholder='Enter email'
                         name="email"
@@ -63,25 +54,6 @@ const LoginForm = (props) => {
                         value={formState.password}
                         onChange={handleChange}
                     />
-=======
-                    <input type="email" 
-                           placeholder='Enter email'
-                           name="email" 
-                           id="email"
-                           value={formState.email}
-                           onChange={handleChange} 
-                           />
-                </div>
-                <div>
-                    <label>Password</label>
-                    <input type="text" 
-                           placeholder='******'
-                           name="password"
-                           id="password"
-                           value={formState.password}
-                           onChange={handleChange} 
-                           />
->>>>>>> 16c480b22ebf1db14c878bc34d45ff004b366537
                 </div>
                 <button type="submit">Submit</button>
             </form>
