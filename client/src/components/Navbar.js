@@ -1,7 +1,11 @@
+
+
 import React from 'react';
+import SearchBar from './Search';
+import Signup from './Signup';
+import Login from './login';
 
-
-function Nav({ currentPage, handlePageChange }) {
+function Nav({ currentPage, handlePageChange, setSearchResults }) {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
@@ -10,13 +14,16 @@ function Nav({ currentPage, handlePageChange }) {
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
+        <SearchBar
+          handlePageChange={handlePageChange}
+          setSearchResults={setSearchResults}
+        />
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
               <a
                 href="#NewsList"
                 onClick={() => handlePageChange('NewsList')}
-
                 className={currentPage === 'NewsList' ? 'nav-link active' : 'nav-link'}
               >
                 Top Stories
@@ -26,8 +33,6 @@ function Nav({ currentPage, handlePageChange }) {
               <a
                 href="#Business"
                 onClick={() => handlePageChange('Business')}
-                //  TODO: Add a comment explaining what this logic is doing
-
                 className={currentPage === 'Business' ? 'nav-link active' : 'nav-link'}
               >
                 Business
@@ -37,8 +42,6 @@ function Nav({ currentPage, handlePageChange }) {
               <a
                 href="#Health"
                 onClick={() => handlePageChange('Health')}
-                //  TODO: Add a comment explaining what this logic is doing
-
                 className={currentPage === 'Health' ? 'nav-link active' : 'nav-link'}
               >
                 Health
@@ -48,19 +51,15 @@ function Nav({ currentPage, handlePageChange }) {
               <a
                 href="#Entertainment"
                 onClick={() => handlePageChange('Entertainment')}
-                //  TODO: Add a comment explaining what this logic is doing
-
                 className={currentPage === 'Entertainment' ? 'nav-link active' : 'nav-link'}
               >
                 Entertainment
               </a>
             </li>
-          <li className="nav-item">
+            <li className="nav-item">
               <a
                 href="#sports"
                 onClick={() => handlePageChange('Sports')}
-                //  TODO: Add a comment explaining what this logic is doing
-
                 className={currentPage === 'Sports' ? 'nav-link active' : 'nav-link'}
               >
                 Sports
@@ -70,8 +69,6 @@ function Nav({ currentPage, handlePageChange }) {
               <a
                 href="#Technology"
                 onClick={() => handlePageChange('Technology')}
-                //  TODO: Add a comment explaining what this logic is doing
-
                 className={currentPage === 'Technology' ? 'nav-link active' : 'nav-link'}
               >
                 Technology
@@ -80,8 +77,6 @@ function Nav({ currentPage, handlePageChange }) {
             <li className="nav-item">
               <a
                 href="#contact"
-                //  TODO: Add a comment explaining what this logic is doing
-
                 onClick={() => handlePageChange('Contact')}
                 className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
               >
@@ -91,14 +86,32 @@ function Nav({ currentPage, handlePageChange }) {
             <li className="nav-item">
               <a
                 href="#donate"
-                //  TODO: Add a comment explaining what this logic is doing
-
                 onClick={() => handlePageChange('Donation')}
                 className={currentPage === 'Donation' ? 'nav-link active' : 'nav-link'}
               >
                 Donation
               </a>
             </li>
+            {/* <li className="nav-item">
+              <a
+                href="#Signup"
+                onClick={() => handlePageChange('Signup')}
+                className={currentPage === 'Signup' ? 'nav-link active' : 'nav-link'}
+              >
+                Signup
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                href="#Login"
+                onClick={() => handlePageChange('Login')}
+                className={currentPage === Login ? 'nav-link active' : 'nav-link'}
+              >
+                Login
+              </a>
+            </li> */}
+            <Login />
+            <Signup />
           </ul>
         </div>
       </div>

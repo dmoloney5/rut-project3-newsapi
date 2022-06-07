@@ -8,10 +8,15 @@ import Technology from './Technology';
 import Entertainment from './Entertainment';
 import Contact from './Contact'
 import Donation from './Donation';
+import SearchResults from './SearchResults';
 
 
 export default function News() {
     const [currentPage, setCurrentPage] = useState('NewsList');
+    const [searchResults,setSearch]=useState([]);
+    const setSearchResults = (data) => {
+        setSearch(data)
+    }
     const renderPage = () => {
         if (currentPage === 'NewsList') {
             return <NewsList />;
@@ -34,6 +39,11 @@ export default function News() {
         if (currentPage === 'Donation') {
             return <Donation />;
         }
+        if (currentPage === 'Search') {
+            //create search results component that passes searchResults data in as prop
+            return <SearchResults 
+            searchResults={searchResults}></SearchResults>
+        }
 
         return <Contact />;
     };
@@ -42,7 +52,7 @@ export default function News() {
 
     return (
         <div>
-            <Navbar currentPage={currentPage} handlePageChange={handlePageChange} />
+            <Navbar currentPage={currentPage} handlePageChange={handlePageChange} setSearchResults={setSearchResults} />
             {renderPage()}
         </div>
     );

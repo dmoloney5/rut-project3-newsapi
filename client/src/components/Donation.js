@@ -5,6 +5,7 @@ import StripeCheckout from "react-stripe-checkout";
 // import Button from "react-bootstrap/Button";
 import DonationOptions from "./DonationOption";
 import DonationPage from "./DonationPage/index";
+import "react-bootstrap";
 
 function Donation() {
   const [item] = useState({
@@ -35,36 +36,13 @@ function Donation() {
 
   return (
     <div>
-       
-      
-      {/* <form>
-        <label>
-          First Name:
-          <input type="text" name="name" />
-        </label>
-        <label>
-          Last Name:
-          <input type="text" name="name" />
-        </label>
-        <label>
-          Address:
-          <input type="text" name="address" />
-        </label>
-        <label>
-          Email:
-          <input type="text" name="email" />
-        </label>
+      <DonationPage />
 
-        
-       
-      </form> */}
-
-      <DonationPage/>
-    <DonationOptions/>
+      <DonationOptions />
       <StripeCheckout
         stripeKey={process.env.REACT_APP_KEY}
         token={payment}
-        name="Donation"
+        name="Pay with Card"
         amount={"amount" * 100}
       >
         <button>Donate </button>
@@ -74,4 +52,3 @@ function Donation() {
 }
 
 export default Donation;
-
