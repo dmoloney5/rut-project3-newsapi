@@ -1,7 +1,7 @@
 import React from 'react';
 import SearchBar from './Search';
-import Signup from './Signup';
-import Login from './Login';
+// import Signup from './Signup';
+// import Login from './Login';
 
 function Nav({ currentPage, handlePageChange, setSearchResults }) {
   return (
@@ -78,9 +78,7 @@ function Nav({ currentPage, handlePageChange, setSearchResults }) {
                 Donation
               </a>
             </li>
-            <Login />
-            <Signup />
-          </ul>
+                      </ul>
         </div>
       </div>
     </nav>

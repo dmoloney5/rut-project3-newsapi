@@ -26,7 +26,19 @@ function SearchBar({handlePageChange,setSearchResults}) {
         <input type="text" value={barState} onChange={handleChange} />
       </label>
       <input type="submit" value="Submit" />
+      {articles.map((article) => {
+        return (
+          <SearchBar
+            key={article.title}
+            title={article.title}
+            description={article.description}
+            url={article.url}
+            urlToImage={article.urlToImage}
+          />
+        );
+      })}
     </form>
+    
 
   );
 }
