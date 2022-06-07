@@ -2,8 +2,14 @@ import React from 'react';
 import SearchBar from './Search';
 import Signup from './Signup';
 import Login from './login';
+import Auth from '../utils/auth';
 
 function Nav({ currentPage, handlePageChange, setSearchResults }) {
+  const logout = event => {
+    event.preventDefault();
+    Auth.logout();
+
+  }
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
@@ -103,6 +109,7 @@ function Nav({ currentPage, handlePageChange, setSearchResults }) {
             </li> */}
             <Login />
             <Signup />
+            <a href="/" onClick={logout}>Logout</a>
           </ul>
         </div>
       </div>
