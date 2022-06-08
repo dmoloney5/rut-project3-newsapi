@@ -18,7 +18,9 @@ const NewsList = () => {
     getArticles();
   }, []);
   return (
-    <div className="NewsList">
+    <section className="NewsList">
+      <div className="row ">
+      
       {articles.map((article) => {
         return (
           <NewsItem
@@ -30,7 +32,9 @@ const NewsList = () => {
           />
         );
       })}
-    </div>
+      </div>
+      
+    </section>
   );
 };
 

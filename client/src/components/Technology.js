@@ -16,7 +16,9 @@ const TechList = () => {
         getArticles()
     }, [])
     return (
+       
         <div className = 'Technology'>
+        <div className="row">
             {articles.map(article => {
                 return (
                     <NewsItem
@@ -27,6 +29,8 @@ const TechList = () => {
                     />
                 )
             })}
+            
+        </div>
         </div>
     )
 }

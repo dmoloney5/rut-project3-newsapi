@@ -16,7 +16,9 @@ const EnterList = () => {
         getArticles()
     }, [])
     return (
+        
         <div className='Entertainment'>
+        <div className="row">
             {articles.map(article => {
                 return (
                     <NewsItem
@@ -27,6 +29,7 @@ const EnterList = () => {
                     />
                 )
             })}
+        </div>
         </div>
     )
 }

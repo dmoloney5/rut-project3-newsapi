@@ -21,6 +21,7 @@ class DonationOptions extends React.Component {
 
   render() {
     return (
+      <div class="row g-12">
       <form onSubmit={this.handleSubmit} className="row g-2">
         <div class="col-md-6">
           <label>
@@ -75,6 +76,7 @@ class DonationOptions extends React.Component {
         </label>
         {/* <input type="submit" value="Submit" /> */}
       </form>
+      </div>
     );
   }
 }

@@ -37,8 +37,11 @@ function Donation() {
   
 
   return (
-    <div>
+    <div class="row justify-content-md-center">
+      <div class="col-md-10">
       <DonationPage />
+      </div>
+      <div class="col-md-4">
       <DonationOptions />
       <StripeCheckout
         stripeKey={process.env.REACT_APP_KEY}
@@ -48,6 +51,7 @@ function Donation() {
       >
         <button>Donate </button>
       </StripeCheckout>
+      </div>
     </div>
   );
 }
