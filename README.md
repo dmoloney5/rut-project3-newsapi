@@ -29,4 +29,4 @@ Nodejs, Express, REACT, MongoDB, bcrypt, express-session, and dotenv
 
 ## ScreenShot
 
-![screenshot]()
+![screenshot](https://github.com/dmoloney5/rut-project3-newsapi/blob/main/client/Asset/Null_and_Void_News.png.jpg)
