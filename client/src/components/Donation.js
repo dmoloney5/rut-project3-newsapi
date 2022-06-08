@@ -41,7 +41,7 @@ function Donation() {
       <div class="col-md-10">
       <DonationPage />
       </div>
-      <div class="col-md-4">
+      <div class="col-md-8 justify-content-md-center">
       <DonationOptions item={item} setItem={setItem} />
       <StripeCheckout
         stripeKey={process.env.REACT_APP_KEY}

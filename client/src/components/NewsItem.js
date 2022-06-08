@@ -10,8 +10,7 @@ const NewsItem = ({ title, description, url, urlToImage }) => {
                 <p className= 'news-text'>{description}</p>
             </div>
         </div>
-      </div>
-    </div>
+     
   );
 };
 

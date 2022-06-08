@@ -30,7 +30,7 @@ const BusinessList = () => {
                 )
             })}
         </div>
-        </div>
+    
     )
 }
 

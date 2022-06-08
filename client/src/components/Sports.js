@@ -30,7 +30,7 @@ const SportsList = () => {
                 )
             })}
         </div>
-        </div>
+    
     )
 }
 
