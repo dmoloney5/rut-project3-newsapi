@@ -19,7 +19,7 @@ Hannah Bush, Angelo Saverino, Dennis Moloney, Salieu Sarr, Armond Rodriguez
 
 ## Website
 
-https://rut-project3-newsapi.herokuapp.com/git
+https://rut-project3-newsapi.herokuapp.com/
 
 ## Repository
 
