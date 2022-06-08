@@ -73,24 +73,14 @@ function Nav({ currentPage, handlePageChange, setSearchResults }) {
                 Sports
               </a>
             </li>
-            <li className="nav-item">
-              <a
-                href="#Health"
-                onClick={() => handlePageChange('Health')}
-                //  TODO: Add a comment explaining what this logic is doing
-
-                className={currentPage === 'Health' ? 'nav-link active' : 'nav-link'}
-              >
-                Health
-              </a>
-            </li>
+            
             <li className="nav-item">
               <a
                 href="#Donation"
                 //  TODO: Add a comment explaining what this logic is doing
 
                 onClick={() => handlePageChange('Donation')}
-                className={currentPage === 'Dontaion' ? 'nav-link active' : 'nav-link'}
+                className={currentPage === 'Donation' ? 'nav-link active' : 'nav-link'}
               >
                 Donation
               </a>

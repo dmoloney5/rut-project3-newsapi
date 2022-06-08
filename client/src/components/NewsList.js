@@ -9,7 +9,7 @@ const NewsList = () => {
   useEffect(() => {
     const getArticles = async () => {
       const response = await axios.get(
-        `https://newsapi.org/v2/top-headlines?country=us&apiKey=61b7a8f9debe482ca9463aa72a5ca4a3`
+        `https://inshorts.deta.dev/news?category=all`
       );
       setArticles(response.data.articles);
       console.log(response);
