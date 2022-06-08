@@ -1,7 +1,8 @@
-/* dont seem to use this css either */
+/* This is the main css file */
 .news-app {
   display:inline-flex;
   justify-content:left;
+  background-color: white;
 }
 
 .news-item {
@@ -15,6 +16,12 @@
   display: flex;
   padding-right: 1%;
   width: 25%;
+  /* border-radius: 10%; */
+}
+
+.news-title {
+  display: inline-block;
+  justify-content: center;
 }
 
 .title {

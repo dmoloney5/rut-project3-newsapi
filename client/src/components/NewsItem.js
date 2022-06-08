@@ -6,7 +6,7 @@ const NewsItem = ({ title, description, url, urlToImage }) => {
         <div className="news-app">
             <div className='news-item'>
                 <img className='news-img' src={urlToImage} alt={urlToImage} />
-                <h3><a href={url}>{title}</a></h3>
+                <h3><a class= 'news-title' href={url}>{title}</a></h3>
                 <p>{description}</p>
             </div>
         </div>
