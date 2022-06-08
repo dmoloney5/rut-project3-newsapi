@@ -4,34 +4,32 @@ import { NewsItem } from ".";
 require("dotenv").config({ path: "../../.env" });
 
 const NewsList = () => {
-  const [articles, setArticles] = useState([]);
+  const [data, setArticles] = useState([])
 
   useEffect(() => {
     const getArticles = async () => {
-      const response = await axios.get(
-        `https://newsapi.org/v2/top-headlines?country=us&apiKey=61b7a8f9debe482ca9463aa72a5ca4a3`
-      );
-      setArticles(response.data.articles);
-      console.log(response);
-    };
+      const response = await axios.get(`https://inshorts.deta.dev/news?category=all`)
+      setArticles(response.data.data)
+      console.log(response)
+    }
 
-    getArticles();
-  }, []);
+    getArticles()
+  }, [])
   return (
-    <div className="NewsList">
-      {articles.map((article) => {
+    <div className='NewsList'>
+      {data.map(data => {
         return (
           <NewsItem
-            key={article.title}
-            title={article.title}
-            description={article.description}
-            url={article.url}
-            urlToImage={article.urlToImage}
+            key={data.id}
+            title={data.title}
+            description={data.content}
+            url={data.url}
+            urlToImage={data.imageUrl}
           />
-        );
+        )
       })}
     </div>
-  );
-};
+  )
+}
 
 export default NewsList;

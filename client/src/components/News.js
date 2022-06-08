@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
+import Title from './Title';
 import Navbar from './Navbar';
 import NewsList from './NewsList';
 import Business from './Business';
-import Health from './Health';
 import Sports from './Sports';
 import Technology from './Technology';
 import Entertainment from './Entertainment';
 import Contact from './Contact'
 import Donation from './Donation';
 import SearchResults from './SearchResults';
+import LoginOrSignup from './LoginOrSignup';
 
 
 export default function News() {
@@ -23,9 +24,6 @@ export default function News() {
         }
         if (currentPage === 'Business') {
             return <Business />;
-        }
-        if (currentPage === 'Health') {
-            return <Health />;
         }
         if (currentPage === 'Sports') {
             return <Sports />;
@@ -44,6 +42,9 @@ export default function News() {
             return <SearchResults 
             searchResults={searchResults}></SearchResults>
         }
+        if (currentPage === 'LoginOrSignup') {
+            return <LoginOrSignup />;
+        }
 
         return <Contact />;
     };
@@ -52,6 +53,7 @@ export default function News() {
 
     return (
         <div>
+            <Title />
             <Navbar currentPage={currentPage} handlePageChange={handlePageChange} setSearchResults={setSearchResults} />
             {renderPage()}
         </div>

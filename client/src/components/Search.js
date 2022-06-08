@@ -4,8 +4,7 @@ import axios from 'axios'
 function SearchBar({handlePageChange,setSearchResults}) {
   //jsx
   const [barState, setBarState] = useState("");
-  const [articles, setArticles] = useState([]);
-  //const [errMsg, setErrMsg] = useState('');
+  const [setArticles] = useState([]);
   function handleChange(e) {
     setBarState(e.target.value);
   }
@@ -16,16 +15,15 @@ function SearchBar({handlePageChange,setSearchResults}) {
     setArticles (response.data.articles);
     setSearchResults(response.data.articles)
     handlePageChange("Search")
-
   }
 
   return (
     <form onSubmit={handleSubmit}>
-      <label>
-        Search:
-        <input type="text" value={barState} onChange={handleChange} />
+      <label className='search'>
+        Search: 
+        <input type="text" value={barState} onChange={handleChange} className='serach' />
       </label>
-      <input type="submit" value="Submit" />
+      <input type="submit" value="Submit" className='search-submit'/>
     </form>
 
   );
