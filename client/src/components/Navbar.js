@@ -22,14 +22,12 @@ function Nav({ currentPage, handlePageChange, setSearchResults }) {
           handlePageChange={handlePageChange}
           setSearchResults={setSearchResults}
         />
-       
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
               <a
                 href="#Newslist"
                 onClick={() => handlePageChange('Newslist')}
-
                 className={currentPage === 'NewsList' ? 'nav-link active' : 'nav-link'}
               >
                 Top Stories
@@ -39,8 +37,6 @@ function Nav({ currentPage, handlePageChange, setSearchResults }) {
               <a
                 href="#Business"
                 onClick={() => handlePageChange('Business')}
-               
-
                 className={currentPage === 'Business' ? 'nav-link active' : 'nav-link'}
               >
                 Business
@@ -50,8 +46,6 @@ function Nav({ currentPage, handlePageChange, setSearchResults }) {
               <a
                 href="#Entertainment"
                 onClick={() => handlePageChange('Entertainment')}
-                
-
                 className={currentPage === 'Entertainment' ? 'nav-link active' : 'nav-link'}
               >
                 Entertainment
@@ -61,8 +55,6 @@ function Nav({ currentPage, handlePageChange, setSearchResults }) {
               <a
                 href="#Technology"
                 onClick={() => handlePageChange('Technology')}
-               
-
                 className={currentPage === 'Technology' ? 'nav-link active' : 'nav-link'}
               >
                 Technology
@@ -72,8 +64,6 @@ function Nav({ currentPage, handlePageChange, setSearchResults }) {
               <a
                 href="#Sports"
                 onClick={() => handlePageChange('Sports')}
-
-
                 className={currentPage === 'Sports' ? 'nav-link active' : 'nav-link'}
               >
                 Sports
@@ -83,8 +73,6 @@ function Nav({ currentPage, handlePageChange, setSearchResults }) {
             <li className="nav-item">
               <a
                 href="#Donation"
-
-
                 onClick={() => handlePageChange('Donation')}
                 className={currentPage === 'Donation' ? 'nav-link active' : 'nav-link'}
               >

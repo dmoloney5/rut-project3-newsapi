@@ -4,8 +4,7 @@ import axios from 'axios'
 function SearchBar({handlePageChange,setSearchResults}) {
   //jsx
   const [barState, setBarState] = useState("");
-  const [articles, setArticles] = useState([]);
-  //const [errMsg, setErrMsg] = useState('');
+  const [setArticles] = useState([]);
   function handleChange(e) {
     setBarState(e.target.value);
   }
@@ -16,7 +15,6 @@ function SearchBar({handlePageChange,setSearchResults}) {
     setArticles (response.data.articles);
     setSearchResults(response.data.articles)
     handlePageChange("Search")
-
   }
 
   return (
