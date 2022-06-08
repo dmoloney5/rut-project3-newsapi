@@ -6,14 +6,15 @@
 
 .news-item {
   display:flex;
-  padding: 20px;
+  padding: 1%;
   border: 1px solid;
-  margin: 10px;
+  margin: 1%;
 }
 
 .news-img {
-  padding-right: 20px;
-  width: 300px;
+  display: flex;
+  padding-right: 1%;
+  width: 25%;
 }
 
 .navbar {
