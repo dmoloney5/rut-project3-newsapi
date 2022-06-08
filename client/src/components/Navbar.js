@@ -81,7 +81,7 @@ function Nav({ currentPage, handlePageChange, setSearchResults }) {
         </div>
         <div>
           <ul>
-            <li className="nav-item lins">
+            <li className="nav-item lors">
               <a
                 href="#LoginOrSignup"
                 onClick={() => handlePageChange('LoginOrSignup')}

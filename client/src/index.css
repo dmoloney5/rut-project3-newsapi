@@ -56,6 +56,12 @@
   background-color: rgb(83, 83, 83);
 }
 
+.lors {
+  color: white;
+  background-color: rgb(209, 209, 209);
+  padding-bottom: 8px;
+}
+
 .navbar {
   text-align: center;
   padding: 80px;
