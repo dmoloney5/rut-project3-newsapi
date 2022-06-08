@@ -1,7 +1,5 @@
 import React from 'react';
 import SearchBar from './Search';
-import Signup from './Signup';
-import Login from './login';
 import Auth from '../utils/auth';
 
 function Nav({ currentPage, handlePageChange, setSearchResults }) {

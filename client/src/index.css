@@ -177,3 +177,8 @@ header ul li {
   display: inline;
 }
 
+.login {
+  display: flex;
+  justify-content: center;
+  margin-top: 5vh;
+}

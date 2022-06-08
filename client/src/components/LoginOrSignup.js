@@ -4,7 +4,7 @@ import Signup from './Signup'
 
 const LoginOrSignup = () => {
     return (
-        <div >
+        <div className='login'>
           <Login />
           <Signup />
         </div>
