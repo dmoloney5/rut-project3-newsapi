@@ -47,7 +47,7 @@ const LoginForm = (props) => {
                 </div>
                 <div>
                     <label>Password</label>
-                    <input type="text" 
+                    <input type="password" 
                            placeholder='******'
                            name="password"
                            id="password"
