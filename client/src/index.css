@@ -11,6 +11,11 @@
   margin: 10px;
 }
 
+.news-img {
+  padding-right: 20px;
+  width: 300px;
+}
+
 .navbar {
   text-align: center;
   padding: 80px;
@@ -18,11 +23,6 @@
 
 .navbar-nav {
   text-align: center;
-}
-
-
-.news-img {
-  width: 300px;
 }
 
 main {
