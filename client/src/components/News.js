@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Title from './Title';
 import Navbar from './Navbar';
 import NewsList from './NewsList';
 import Business from './Business';
@@ -52,6 +53,7 @@ export default function News() {
 
     return (
         <div>
+            <Title />
             <Navbar currentPage={currentPage} handlePageChange={handlePageChange} setSearchResults={setSearchResults} />
             {renderPage()}
         </div>
