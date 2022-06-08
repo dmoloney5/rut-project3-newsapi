@@ -21,7 +21,7 @@ function Nav({ currentPage, handlePageChange, setSearchResults }) {
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
               <a
-                href="Newslist"
+                href="#Newslist"
                 onClick={() => handlePageChange('Newslist')}
 
                 className={currentPage === 'NewsList' ? 'nav-link active' : 'nav-link'}
