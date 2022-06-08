@@ -47,6 +47,7 @@ const LoginForm = (props) => {
                 </div>
                 <div>
                     <label>Password</label>
+<<<<<<< HEAD
                     <input type="text"
                         placeholder='******'
                         name="password"
@@ -54,6 +55,15 @@ const LoginForm = (props) => {
                         value={formState.password}
                         onChange={handleChange}
                     />
+=======
+                    <input type="password" 
+                           placeholder='******'
+                           name="password"
+                           id="password"
+                           value={formState.password}
+                           onChange={handleChange} 
+                           />
+>>>>>>> develop
                 </div>
                 <button type="submit">Submit</button>
             </form>
