@@ -5,10 +5,10 @@
 }
 
 .news-item {
-  width: 400px;
+  display:flex;
   padding: 20px;
   border: 1px solid;
-  margin-bottom: 30px;
+  margin: 10px;
 }
 
 .navbar {
