@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Navbar from './Navbar';
 import NewsList from './NewsList';
 import Business from './Business';
-import Health from './Health';
 import Sports from './Sports';
 import Technology from './Technology';
 import Entertainment from './Entertainment';
@@ -23,9 +22,6 @@ export default function News() {
         }
         if (currentPage === 'Business') {
             return <Business />;
-        }
-        if (currentPage === 'Health') {
-            return <Health />;
         }
         if (currentPage === 'Sports') {
             return <Sports />;
