@@ -8,7 +8,7 @@ import DonationPage from "./DonationPage/index";
 import "react-bootstrap";
 
 function Donation() {
-  const [item] = useState({
+  const [item, setItem] = useState({
     name: "Donate",
     price: 5,
   });
@@ -42,7 +42,7 @@ function Donation() {
       <DonationPage />
       </div>
       <div class="col-md-4">
-      <DonationOptions />
+      <DonationOptions item={item} setItem={setItem} />
       <StripeCheckout
         stripeKey={process.env.REACT_APP_KEY}
         token={payment}
