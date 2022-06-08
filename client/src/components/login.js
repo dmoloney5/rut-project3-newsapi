@@ -47,13 +47,13 @@ const LoginForm = (props) => {
                 </div>
                 <div>
                     <label>Password</label>
-                    <input type="text"
-                        placeholder='******'
-                        name="password"
-                        id="password"
-                        value={formState.password}
-                        onChange={handleChange}
-                    />
+                    <input type="password" 
+                           placeholder='******'
+                           name="password"
+                           id="password"
+                           value={formState.password}
+                           onChange={handleChange} 
+                           />
                 </div>
                 <button type="submit">Submit</button>
             </form>
