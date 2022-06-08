@@ -79,10 +79,20 @@ function Nav({ currentPage, handlePageChange, setSearchResults }) {
                 Donation
               </a>
             </li>
-      
-            <Login />
-            <Signup />
-            <a href="/" onClick={logout}>Logout</a>
+          </ul>
+        </div>
+        <div>
+          <ul>
+          <li className="nav-item">
+              <a
+                href="#LoginOrSignup"
+                onClick={() => handlePageChange('LoginOrSignup')}
+                className={currentPage === 'LoginOrSignup' ? 'nav-link active' : 'nav-link'}
+              >
+                Login or Signup
+              </a>
+              <a href="/" onClick={logout}>Logout</a>
+            </li>
           </ul>
         </div>
       </div>

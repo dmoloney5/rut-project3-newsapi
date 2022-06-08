@@ -8,6 +8,7 @@ import Entertainment from './Entertainment';
 import Contact from './Contact'
 import Donation from './Donation';
 import SearchResults from './SearchResults';
+import LoginOrSignup from './LoginOrSignup';
 
 
 export default function News() {
@@ -39,6 +40,9 @@ export default function News() {
             //create search results component that passes searchResults data in as prop
             return <SearchResults 
             searchResults={searchResults}></SearchResults>
+        }
+        if (currentPage === 'LoginOrSignup') {
+            return <LoginOrSignup />;
         }
 
         return <Contact />;
