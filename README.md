@@ -2,6 +2,8 @@
 
 ## Description
 
+Null And Void News is here to pull unbiased news from all around the web! Easily find news from common categories such as Business, Entertainment, and Technology.
+
 ## Table of Contents
 
 - [Installation](#installation)
@@ -17,7 +19,7 @@ Hannah Bush, Angelo Saverino, Dennis Moloney, Salieu Sarr, Armond Rodriguez
 
 ## Website
 
-https://rut-project3-newsapi.herokuapp.com/#Newslist
+https://rut-project3-newsapi.herokuapp.com/
 
 ## Repository
 
