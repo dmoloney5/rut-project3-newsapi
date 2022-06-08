@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(cors());
 
 app.get("/", (req, res) => {
-  res.send("IT WORKS AT LEARCODEONLINE");
+  res.send("IT WORKS");
 });
 
 app.post("./payment", (req, res) => {

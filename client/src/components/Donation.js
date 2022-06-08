@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 // //   import logo from "./logo.svg";
-// import "./App.css";
+ import "../App.css";
 import StripeCheckout from "react-stripe-checkout";
 // import Button from "react-bootstrap/Button";
-import DonationOptions from "./DonationOption";
+import DonationOptions from "./DonationOptions";
 import DonationPage from "./DonationPage/index";
 import "react-bootstrap";
 
 function Donation() {
   const [item] = useState({
-    name: "Donate 10",
-    price: "10",
+    name: "Donate",
+    price: 5,
   });
 
   const payment = (token) => {
@@ -33,6 +33,8 @@ function Donation() {
       })
       .catch((error) => console.log(error));
   };
+
+  
 
   return (
     <div>

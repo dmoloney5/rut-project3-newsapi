@@ -6,21 +6,22 @@ class DonationOptions extends React.Component {
     this.state = { value: "5" };
 
     this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
+    // this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleChange(event) {
     this.setState({ value: event.target.value });
   }
 
-  handleSubmit(event) {
-    window.confirm("Please confirm your donations of $" + this.state.value);
-    event.preventDefault();
-  }
+  // handleSubmit(event) {
+  //   window.confirm("Please confirm your donations of $" + this.state.value);
+  //   event.preventDefault();
+  //  console.log(this.state.value);
+  // }
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form onSubmit={this.handleSubmit} className="row g-2">
         <div class="col-md-6">
           <label>
             First Name:
@@ -72,7 +73,7 @@ class DonationOptions extends React.Component {
             <option value="50">50</option>
           </select>
         </label>
-        <input type="submit" value="Submit" />
+        {/* <input type="submit" value="Submit" /> */}
       </form>
     );
   }
