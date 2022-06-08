@@ -5,14 +5,14 @@ function SearchResults({searchResults}) {
   console.log("blah" + searchResults);
   return (
     <div className="SearchResults">
-      {searchResults?.map((article) => {
+      {searchResults?.map((data) => {
         return (
           <NewsItem
-            key={article.title}
-            title={article.title}
-            description={article.description}
-            url={article.url}
-            urlToImage={article.urlToImage}
+            key={data.title}
+            title={data.title}
+            description={data.description}
+            url={data.url}
+            imageUrl={data.imageUrl}
           />
         );
       })}

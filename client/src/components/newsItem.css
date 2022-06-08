@@ -1,1 +1,41 @@
-/* do not use; use index.css instead */
+/* This is the main css file */
+.news-app {
+  display:inline-flex;
+  justify-content:left;
+  background-color: white;
+}
+
+.news-item {
+  display:flex;
+  padding: 1%;
+  border: 1px solid;
+  margin: 1%;
+  color: var(--dark);
+}
+
+.news-img {
+  display: flex;
+  padding-right: 1%;
+  width: 25%;
+  /* border-radius: 10%; */
+}
+
+.news-title {
+  margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: var(--dark);
+}
+
+/* .news-text{
+  vertical-align:text-top;
+} */
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5vh;
+  font-size:xx-large;
+}

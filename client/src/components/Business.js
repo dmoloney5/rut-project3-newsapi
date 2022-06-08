@@ -23,7 +23,7 @@ const BusinessList = () => {
                         title={data.title}
                         description={data.content}
                         url={data.url}
-                        urlToImage={data.imageUrl}
+                        imageUrl={data.imageUrl}
                     />
                 )
             })}
