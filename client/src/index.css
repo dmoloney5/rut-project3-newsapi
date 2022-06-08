@@ -10,6 +10,7 @@
   padding: 1%;
   border: 1px solid;
   margin: 1%;
+  color: var(--dark);
 }
 
 .news-img {
@@ -24,6 +25,7 @@
     margin-block-end: 1.33em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+    color: var(--dark);
 }
 
 /* .news-text{
@@ -81,7 +83,7 @@ max-width: 75%;
 --primary: #8c54ff;
 --secondary: #F3A847;
 --tertiary: #B12704;
---light: #fafafa;
+--light: tan;
 --dark: #000000;
 --darker: #111111;
 --error: rgb(228, 46, 1);
