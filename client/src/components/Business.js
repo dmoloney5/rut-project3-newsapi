@@ -4,12 +4,12 @@ import { NewsItem } from '.'
 require('dotenv').config({ path: '../../.env' })
 
 const BusinessList = () => {
-    const [articles, setArticles] = useState([])
+    const [data, setArticles] = useState([])
 
     useEffect(() => {
         const getArticles = async () => {
-            const response = await axios.get(`https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=61b7a8f9debe482ca9463aa72a5ca4a3`)
-            setArticles(response.data.articles)
+            const response = await axios.get(`https://inshorts.deta.dev/news?category=Business`)
+            setArticles(response.data.data)
             console.log(response)
         }
 
@@ -18,14 +18,14 @@ const BusinessList = () => {
     return (
        
         <div className= 'Business'>
-             <div className="row">
-            {articles.map(article => {
+            {data.map(data => {
                 return (
                     <NewsItem
-                        title={article.title}
-                        description={article.description}
-                        url={article.url}
-                        urlToImage={article.urlToImage}
+                        key={data.id}
+                        title={data.title}
+                        description={data.content}
+                        url={data.url}
+                        urlToImage={data.imageUrl}
                     />
                 )
             })}

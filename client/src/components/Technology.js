@@ -4,28 +4,27 @@ import { NewsItem } from '.'
 require('dotenv').config({ path: '../../.env' })
 
 const TechList = () => {
-    const [articles, setArticles] = useState([])
+    const [data, setArticles] = useState([])
 
     useEffect(() => {
         const getArticles = async () => {
-            const response = await axios.get(`https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=61b7a8f9debe482ca9463aa72a5ca4a3`)
-            setArticles(response.data.articles)
+            const response = await axios.get(`https://inshorts.deta.dev/news?category=Technology`)
+            setArticles(response.data.data)
             console.log(response)
         }
 
         getArticles()
     }, [])
     return (
-       
-        <div className = 'Technology'>
-        <div className="row">
-            {articles.map(article => {
+        <div className='Technology'>
+            {data.map(data => {
                 return (
                     <NewsItem
-                        title={article.title}
-                        description={article.description}
-                        url={article.url}
-                        urlToImage={article.urlToImage}
+                        key={data.id}
+                        title={data.title}
+                        description={data.content}
+                        url={data.url}
+                        urlToImage={data.imageUrl}
                     />
                 )
             })}

@@ -27,4 +27,3 @@ function DonationPage(){
 }
 
 export default DonationPage
-

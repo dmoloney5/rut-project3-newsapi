@@ -23,7 +23,7 @@ const resolvers = {
                 if (!user) {
                     throw new AuthenticationError('You entered incorrect information');
                 }
-                const validPassword = await user.isValidPassword(password);
+                const validPassword = await user.isCorrectPassword(password);
 
                 if (!validPassword) {
                     throw new AuthenticationError('You entered incorrect information')
