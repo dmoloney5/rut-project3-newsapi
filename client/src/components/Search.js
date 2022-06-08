@@ -19,11 +19,11 @@ function SearchBar({handlePageChange,setSearchResults}) {
 
   return (
     <form onSubmit={handleSubmit}>
-      <label>
-        Search:
-        <input type="text" value={barState} onChange={handleChange} />
+      <label className='search'>
+        Search: 
+        <input type="text" value={barState} onChange={handleChange} className='serach' />
       </label>
-      <input type="submit" value="Submit" />
+      <input type="submit" value="Submit" className='search-submit'/>
     </form>
 
   );

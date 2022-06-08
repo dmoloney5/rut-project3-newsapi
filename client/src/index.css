@@ -24,6 +24,25 @@
   padding-top: 5vh;
 }
 
+.search {
+  background: gray;
+  padding: 5px;
+  padding-top: 9px;
+  align-items: center;
+}
+
+.search label {
+  padding-left: 8px;
+  color: white;
+}
+
+.search-submit {
+  padding-left: 8px;
+  padding-right: 7px;
+  color: white;
+  background-color: rgb(83, 83, 83);
+}
+
 .navbar {
   text-align: center;
   padding: 80px;

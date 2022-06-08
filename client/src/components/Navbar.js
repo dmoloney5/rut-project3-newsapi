@@ -14,10 +14,12 @@ function Nav({ currentPage, handlePageChange, setSearchResults }) {
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
-         <SearchBar
-          handlePageChange={handlePageChange}
-          setSearchResults={setSearchResults}
-        />
+        <div className='search'>
+          <SearchBar
+            handlePageChange={handlePageChange}
+            setSearchResults={setSearchResults}
+          />
+        </div>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
@@ -65,7 +67,7 @@ function Nav({ currentPage, handlePageChange, setSearchResults }) {
                 Sports
               </a>
             </li>
-            
+
             <li className="nav-item">
               <a
                 href="#Donation"
@@ -79,7 +81,7 @@ function Nav({ currentPage, handlePageChange, setSearchResults }) {
         </div>
         <div>
           <ul>
-          <li className="nav-item">
+            <li className="nav-item lins">
               <a
                 href="#LoginOrSignup"
                 onClick={() => handlePageChange('LoginOrSignup')}
