@@ -46,7 +46,7 @@ export default function News() {
             return <LoginOrSignup />;
         }
 
-        return <Contact />;
+        // return <Contact />;
     };
 
     const handlePageChange = (page) => setCurrentPage(page);

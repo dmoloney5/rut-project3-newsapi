@@ -28,37 +28,37 @@ class DonationOptions extends React.Component {
             <input type="text" name="name" />
           </label>
         </div>
-        <div class="col-md-6">
+        <div className="col-md-6">
           <label>
             Last Name:
             <input type="text" name="name" />
           </label>
         </div>
-        <div class="col-12">
+        <div className="col-12">
           <label>
             Address:
             <input type="text" name="address" />
           </label>
         </div>
-        <div class="col-md-6">
+        <div className="col-md-6">
           <label>
             City:
             <input type="text" name="city" />
           </label>
         </div>
-        <div class="col-md-4">
+        <div className="col-md-4">
           <label>
             State:
             <input type="text" name="state" />
           </label>
         </div>
-        <div class="col-md-4">
+        <div className="col-md-4">
           <label>
             Zip Code:
             <input type="text" name="zip" />
           </label>
         </div>
-        <div class="col-md-6">
+        <div className="col-md-6">
           <label>
             Email:
             <input type="text" name="email" />

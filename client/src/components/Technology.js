@@ -20,6 +20,7 @@ const TechList = () => {
             {data.map(data => {
                 return (
                     <NewsItem
+                        key={data.id}
                         title={data.title}
                         description={data.content}
                         url={data.url}
